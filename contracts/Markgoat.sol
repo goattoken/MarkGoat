@@ -1,6 +1,15 @@
 
 pragma solidity ^0.6.12;
 
+import "./libraries/Address.sol";
+import "./libraries/SafeMath.sol";
+import "./interfaces/ERC20.sol";
+import "./interfaces/IUniswapV2Factory.sol";
+import "./interfaces/IUniswapV2Pair.sol";
+import "./interfaces/IUniswapV2Router01.sol";
+import "./interfaces/IUniswapV2Router02.sol";
+
+
 contract Markgoat is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
